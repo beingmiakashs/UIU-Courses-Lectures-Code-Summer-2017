@@ -18,6 +18,7 @@ public class Student extends Person {
         //super(name, address, email);
         super("X","Y","Z");
         //super();
+        System.out.println("Constructor Student");
         this.id = id;
         this.cgpa = cgpa;
     }
@@ -25,7 +26,7 @@ public class Student extends Person {
     public void display(){
         System.out.println("Student class display:");
         System.out.println(id+" "+cgpa);
-        System.out.println(super.name+" "+this.getEmail());
+        super.display();
     }
 
 }

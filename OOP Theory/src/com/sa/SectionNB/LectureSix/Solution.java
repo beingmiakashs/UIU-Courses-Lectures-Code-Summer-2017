@@ -5,8 +5,13 @@ package com.sa.SectionNB.LectureSix;
  */
 public class Solution {
     public static void main(String[] args) {
-        Student student = new Student("011254",3.98);
-        student.display();
+//        Student student = (Student) new Person();
+//        student.display();
+
+        A person = new Student("012457",3.78);
+        person.display();
+        person = new Person();
+        person.display();
 
     }
 }

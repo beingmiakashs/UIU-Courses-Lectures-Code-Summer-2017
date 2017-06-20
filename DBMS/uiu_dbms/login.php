@@ -1,0 +1,28 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: akashs
+ * Date: 6/20/17
+ * Time: 10:48 AM
+ */
+
+$userid = $_POST["userid"];
+$password = $_POST["pass"];
+
+$conn = mysqli_connect("localhost", "root", "password", "dbms_lab");
+
+if($conn->connect_errno > 0){
+    die("Unable to connect: ". $conn->connect_error);
+}
+
+$query = "SELECT * FROM user where userid='".$userid."' AND password='".$password."'";
+$result = $conn->query($query);
+
+if($result->num_rows==1){
+    echo "Login Successfull.";
+}
+else{
+    echo "Username or password incorrect.";
+}
+
+?>

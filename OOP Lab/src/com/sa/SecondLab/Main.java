@@ -1,4 +1,4 @@
-package com.sa.LectureOne;
+package com.sa.SecondLab;
 
 /**
  * Created by akashs on 6/4/17.
